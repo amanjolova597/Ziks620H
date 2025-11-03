@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Продажа грузовика МАЗ-7310 — Отличное состояние</title>
+  <style>
+    :root{--accent:#2b6cb0;--bg:#f7f7f8;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;margin:0;background:var(--bg);color:#222}
+    .container{max-width:1100px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:46px;height:46px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{margin:6px 0 0;font-size:24px}
+    p.lead{margin:6px 0 0;color:#444}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:20px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .gallery{display:flex;flex-direction:column;gap:12px}
+    .main-photo{width:100%;height:420px;object-fit:cover;border-radius:10px}
+    .thumbs{display:flex;gap:10px}
+    .thumbs img{width:120px;height:80px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent}
+    .thumbs img.active{border-color:var(--accent)}
+    .specs h2{margin-top:0}
+    table.spec-table{width:100%;border-collapse:collapse;margin-top:8px}
+    table.spec-table td{padding:8px 10px;border-bottom:1px dashed #e6e6e6}
+    .price{font-size:28px;color:var(--accent);font-weight:700}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+    form{display:flex;flex-direction:column;gap:8px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px}
+    .contact-side{position:sticky;top:20px}
+    footer{text-align:center;color:#666;margin:40px 0 16px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.contact-side{position:static}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">MAZ</div>
+        <div>
+          <h1>МАЗ-7310(на продажу)</h1>
+          <p class="lead">Отличное техническое состояние. Подходит для перевозки тяжёлой техники и строительных платформ.</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700">Продавец: Транспортная компания "Ziks620H"</div>
+        <div style="color:#555">Тел: +7 (707) 621-45-97 • Email: Ziks@620H.com</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <div class="gallery">
+          <img id="mainImg" src="https://i.ibb.co.com/pv1bCZsX/image.jpg" alt="МАЗ-7310 крупным планом" class="main-photo">
+          <div class="thumbs">
+            <img src="https://i.ibb.co.com/N2wjqfXs/MAZ-537-G-Hun-2010-1.jpg" alt="внешний вид 1" onclick="setMain(this)" class="active">
+            <img src="https://i.ibb.co.com/svhq6xdY/543-2.jpg" alt="внешний вид 2" onclick="setMain(this)">
+          </div>
+        </div>
+
+        <div class="specs" style="margin-top:14px">
+          <h2>Краткие характеристики</h2>
+          <table class="spec-table">
+            <tr><td>Модель</td><td>МАЗ-7310</td></tr>
+            <tr><td>Грузоподъёмность</td><td>20 000 кг</td></tr>
+            <tr><td>Допустимая масса прицепа</td><td>25 000 кг</td></tr>
+            <tr><td>Собственная масса</td><td>23 000 кг</td></tr>
+            <tr><td>Полная масса</td><td>43 300 кг</td></tr>
+            <tr><td>Габариты (Д×Ш×В)</td><td>11 657 × 3 050 × 2 900 мм</td></tr>
+            <tr><td>База</td><td>2 200 + 3 300 + 2 200 мм</td></tr>
+            <tr><td>Колея</td><td>2 375 мм</td></tr>
+            <tr><td>Дорожный просвет</td><td>400 мм</td></tr>
+            <tr><td>Радиус поворота</td><td>13 500 мм</td></tr>
+            <tr><td>Максимальная скорость</td><td>60 км/ч</td></tr>
+            <tr><td>Тормозной путь (с 40 км/ч)</td><td>21 м</td></tr>
+            <tr><td>Двигатель</td><td>Д12А-525А, дизельный, V-образный, 12-цилиндровый</td></tr>
+            <tr><td>Рабочий объём</td><td>38.880 л</td></tr>
+            <tr><td>Мощность</td><td>525 л.с. (386.1 кВт) при 2000 об/мин</td></tr>
+            <tr><td>Крутящий момент</td><td>225 кгс·м (2 206 Н·м) при 1400 об/мин</td></tr>
+            <tr><td>Трансмиссия</td><td>Гидромеханическая: гидротрансформатор (одноступенчатый), 3-ступенчатая планетарная КПП с ручным переключением</td></tr>
+            <tr><td>Раздаточная коробка</td><td>Механическая, 2-ступенчатая с межосевым дифференциалом</td></tr>
+            <tr><td>Колёсная передача</td><td>Планетарная, передаточное число 5,1</td></tr>
+            <tr><td>Передаточные числа КПП</td><td>I — 3,2; II — 1,8; III — 1,0; задний ход — 1,6</td></tr>
+            <tr><td>Передаточные числа раздаточной коробки</td><td>I — 1,88; II — 1,0</td></tr>
+            <tr><td>Подвеска</td><td>Торсионная, независимая всех колёс</td></tr>
+            <tr><td>Размер шин</td><td>1500×600—635</td></tr>
+            <tr><td>Платформа (внутр. размеры)</td><td>7222 × 2848 × 707 мм, с пятью откидными металлическими бортами</td></tr>
+            <tr><td>Погрузочная высота</td><td>1850 мм</td></tr>
+          </table>
+
+          <p style="margin-top:12px">Подробные технические паспорта и фото при осмотре. Возможна предпродажная подготовка и доставка по РФ/Казахстану.</p>
+        </div>
+      </div>
+
+      <aside class="contact-side">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+            <div>
+              <div style="font-size:13px;color:#666">Цена</div>
+              <div class="price">6 500 000 ₽</div>
+            </div>
+            <div>
+              <a class="btn" href="#contact">Связаться</a>
+            </div>
+          </div>
+
+          <hr style="margin:12px 0;border:none;border-top:1px solid #f0f0f0">
+
+          <div style="font-size:13px;color:#666">Дополнительно</div>
+          <ul style="margin:8px 0 0;padding-left:18px;color:#333">
+            <li>Гидравлическая лебёдка — по запросу</li>
+            <li>Запасные колёса и инструменты</li>
+            <li>Проверка ходовой перед покупкой</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:14px" id="contact">
+          <h3 style="margin:0 0 8px 0">Оставить заявку</h3>
+          <form onsubmit="return submitForm(event)">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
+            <input type="email" id="email" placeholder="Email (опционально)">
+            <textarea id="msg" rows="4" placeholder="Сообщение (вопрос/предложение)"></textarea>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+          <p style="font-size:12px;color:#666;margin-top:8px">Мы ответим в течение рабочего дня.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section style="margin-top:20px">
+      <div class="card">
+        <h2 style="margin-top:0">Описание</h2>
+        <p>Продаётся тяжелое шасси МАЗ-7310. Машина после капитального ремонта ходовой части, двигатель обслужен. Имеется комплект запасных шин, оригинальные документы и руководство. Подходит для установки крановой платформы, перевозки строительной техники или как тягач для низкорамных платформ.</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Транспортная компания "ТехМАЗ" — все права защищены
+    </footer>
+  </div>
+
+  <script>
+    function setMain(img){
+      document.querySelectorAll('.thumbs img').forEach(i => i.classList.remove('active'));
+      img.classList.add('active');
+      document.getElementById('mainImg').src = img.src;
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if(!name || !phone){alert('Пожалуйста, укажите имя и телефон.'); return false}
+      alert('Спасибо, заявка отправлена!\nМы свяжемся с вами по указанному телефону.');
+      // Здесь можно добавить AJAX-запрос на сервер или интеграцию с почтой
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
